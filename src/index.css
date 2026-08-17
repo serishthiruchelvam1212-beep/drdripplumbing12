@@ -1,0 +1,19 @@
+@import 'leaflet/dist/leaflet.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-navy-900 antialiased;
+}
+
+/* Ensure Leaflet map containers have a height */
+.leaflet-container {
+  font-family: inherit;
+  z-index: 0;
+}
